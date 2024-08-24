@@ -93,21 +93,30 @@
             color: #cbcbcb; /* Color for control icons */
         }
 
-        .btn-outline-dark{
+        .btn-sz{
             margin: 0.5rem !important;
             height: 60%;
             width: 3rem;
+            border-radius: 0.15rem !important;
             
         }
         .btn-customm{
             margin: 0.5rem !important;
             height: 60% !important;
+            border-radius: 0.15rem !important;
            
         }
         .btn-first{
             margin-left: 1rem !important;
+           
         }
-      
+       .btn-ft{
+         font-size: 12px;
+         font-weight: normal;
+         
+         padding-top: 1rem;
+         padding-bottom: 1rem;
+       }
      
     </style>
 </head>
@@ -180,57 +189,51 @@
     <hr>    
 
 
-   <!--- <div class="container-fluid">
-        <div class="row">
-            <div class="col-2">
-                <button type="button" class="btn btn-outline-dark btn-sm ">XS</button>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-outline-dark btn-sm ">S</button>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-outline-dark btn-sm ">M</button>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-outline-dark btn-sm ">L</button>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-outline-dark btn-sm ">XL</button>
-            </div>
-
-            <div class="col-2">
-                <button type="button" class="btn btn-dark btn-sm ">Size Chart</button>
-            </div>
-        </div>
-    </div>-->
+  
 
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-auto">
                 <div class="btn-group  d-flex justify-content-between">
-                    <button type="button" class="btn btn-outline-dark btn-sm flex-fill">XS</button>
-                    <button type="button" class="btn btn-outline-dark btn-sm flex-fill">S</button>
-                    <button type="button" class="btn btn-outline-dark btn-sm flex-fill">M</button>
-                    <button type="button" class="btn btn-outline-dark btn-sm flex-fill">L</button>
-                    <button type="button" class="btn btn-outline-dark btn-sm flex-fill">XL</button>
+                    <button type="button" class="btn btn-outline-dark btn-sz btn-sm flex-fill">XS</button>
+                    <button type="button" class="btn btn-outline-dark btn-sz btn-sm flex-fill">S</button>
+                    <button type="button" class="btn btn-outline-dark btn-sz btn-sm flex-fill">M</button>
+                    <button type="button" class="btn btn-outline-dark btn-sz btn-sm flex-fill">L</button>
+                    <button type="button" class="btn btn-outline-dark btn-sz btn-sm flex-fill">XL</button>
                     <button type="button" class="btn btn-dark btn-sm flex-fill btn-customm">SizeChart</button>
                 </div>
             </div>
         </div>
     </div>
 
+
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-auto">
+            <!-- Button Group for PC and Tablet -->
+            <div class="col-md-6 d-none d-md-block">
                 <div class="btn-group d-flex justify-content-between">
-                    <button type="button" class="btn btn-outline-dark btn-sm flex-fill">XS</button>
-                    <button type="button" class="btn btn-outline-dark btn-sm flex-fill">S</button>
-                  
+                    <button type="button" class="btn btn-dark flex-fill mx-2">BUY NOW</button>
+                    <button type="button" class="btn btn-outline-dark flex-fill mx-2">ADD TO CART</button>
+                </div>
+            </div>
+    
+            <!-- Button Group for Mobile -->
+            <div class="col-11 d-md-none">
+                <div class="mb-2">
+                    <button type="button" class="btn btn-dark w-100 btn-ft ">BUY NOW</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-outline-dark w-100 btn-ft">ADD TO CART</button>
                 </div>
             </div>
         </div>
     </div>
     
+
+    
+
+
+ 
  
     
     <!-- Bootstrap JS and dependencies -->
