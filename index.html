@@ -5,7 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   
+
+
+
+
+
+
+
+
+
     <style>
+        /* FONTS */
+        @font-face {
+        font-family: 'arial'; /* The name you want to use for the font */
+        src: url('arial.ttf') format('truetype'); /* Path to your .otf file */
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+    font-family: 'Clarika Light';
+    src: url('clarika-light.otf') format('opentype');
+    font-weight: 300; /* Light weight */
+    font-style: normal;
+}
+
+    @font-face {
+    font-family: 'Clarika Medium';
+    src: url('clarika-medium.otf') format('opentype');
+    font-weight: 500; /* Medium weight */
+    font-style: normal;
+}
+
+
         .product-carousel {
             max-width: 400px; /* Adjust to match the previous image width */
             margin: 0 auto;   /* Center horizontally */
@@ -38,6 +70,7 @@
                 padding-right: 0 !important; /* Remove right padding */
                 padding-left: 0 !important;
             }
+
         }
 
         
@@ -48,11 +81,6 @@
         }
         .product-info {
             text-align: center; /* Center the text below the image */
-        }
-        .price {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #d9534f;
         }
         .btn-custom {
             margin-top: 20px;
@@ -66,7 +94,7 @@
         }
 
         
-      
+     
     </style>
 </head>
 <body>
@@ -105,18 +133,37 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">   
 
-                <!-- Product Information -->
-                <div class="product-info mt-4">
-                    <h1>Product Name</h1>
-                    <p class="price">$99.99</p>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <a href="#" class="btn btn-primary btn-custom">Add to Cart</a>
-                </div>
+                <h2 class="d-none d-md-block text-center">LIVE IN THE MOMENT BLUE TSHIRT</h2>
+                <h6 class="d-md-none text-center">LIVE IN THE MOMENT BLUE TSHIRT</h6>
+            </div>
+        </div>
+        <div class="row mt-0 mb-0">
+            <div class="col-12 ">
+                <h4 class="d-none d-md-block text-center">RS.1,999</h4>
+                <h6 class="d-md-none text-center">RS.1,999</h6>
             </div>
         </div>
     </div>
 
+
+
+
+    
+    <!-- size-->
+    <hr>    
+
+
+ 
+    
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
