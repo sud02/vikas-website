@@ -9,6 +9,35 @@
         .product-carousel {
             max-width: 400px; /* Adjust to match the previous image width */
             margin: 0 auto;   /* Center horizontally */
+            position: relative;
+            overflow: hidden; /* Hide overflow to maintain aspect ratio */
+        }
+        .carousel-inner {
+            width: 100%;
+            height: 0;
+            position: relative;
+        }
+        .carousel-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cover the carousel area */
+        }
+        @media (max-width: 767px) {
+            .carousel-inner {
+                padding-top: 125%; /* 4:5 aspect ratio for mobile */
+            }
+        }
+        @media (min-width: 768px) {
+            .carousel-inner {
+                padding-top: 100%; /* 1:1 aspect ratio for tablets and larger screens */
+            }
         }
         .product-info {
             text-align: center; /* Center the text below the image */
@@ -20,10 +49,6 @@
         }
         .btn-custom {
             margin-top: 20px;
-        }
-        .carousel-inner img {
-            width: 100%;
-            height: auto;
         }
         .carousel-indicators li {
             background-color: #c2c2c2; /* Color for indicators */
