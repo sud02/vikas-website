@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .product-image {
+            max-width: 400px; /* Adjust as needed */
+            height: auto;     /* Maintain aspect ratio */
+            margin: 0 auto;   /* Center horizontally */
+        }
+        .product-info {
+            text-align: center; /* Center the text below the image */
+        }
+        .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #d9534f;
+        }
+        .btn-custom {
+            margin-top: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <!-- Product Image -->
+                <img src="img1.jpg" alt="Product Image" class="img-fluid product-image">
+                <!-- Product Information -->
+                <div class="product-info">
+                    <h1>Product Name</h1>
+                    <p class="price">$99.99</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" class="btn btn-primary btn-custom">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
