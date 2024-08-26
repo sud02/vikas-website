@@ -81,8 +81,7 @@
   max-width: 100px; /* Maximum width to control button size */
   border-radius: 0.2rem !important; /* Rounded corners */
   font-size: 14px; /* Set font size for button text */
-  background-color: rgb(68, 66, 66);
-  border-color: rgb(189, 189, 189);
+  color: black;
   padding-top: 3px;
 }
 
@@ -96,8 +95,8 @@
 }
 
   .btn-light{
-    border-color: rgb(189, 189, 189);
-    color: rgb(189, 189, 189) ;
+    border-color: rgb(205, 205, 205);
+    color: rgb(205, 205, 205) ;
   }
 /* Button group styling */
 .btn-group {
@@ -105,7 +104,12 @@
   gap: 0.1rem; /* Small gap between buttons */
   flex-wrap: wrap; /* Allow buttons to wrap if necessary */
 }
-
+ .btn-link{
+  text-underline-offset: 4px !important;
+ }
+ .btn-link:hover{
+  color: rgb(90, 87, 87);
+ }
 /* Media Query for iPhone 12 Pro Max and other similar mobile screens */
 @media (max-width: 431px) {
   .btn-group {
@@ -156,10 +160,20 @@
   }
 }
 
+.modal-dialog{
+  top:200px;
+}
  
   </style>
 </head>
 <body>
+
+
+
+
+
+
+
 
 
 <!-- Carousel -->
@@ -190,12 +204,13 @@
   </div>
   
   <!-- Left and right controls/icons -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
+   <button class="carousel-control-prev d-none d-lg-block" type="button" data-bs-target="#demo" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next d-none d-lg-block" type="button" data-bs-target="#demo" data-bs-slide="next">
+  <span class="carousel-control-next-icon"></span>
+</button>
+  
 </div>
 
     <!--product name and price code-->
@@ -225,7 +240,7 @@
       <button type="button" class="btn btn-outline-dark btn-sz btn-light">M</button>
       <button type="button" class="btn btn-outline-dark btn-sz btn-light">L</button>
       <button type="button" class="btn btn-outline-dark btn-sz btn-light">XL</button>
-      <button type="button" class="btn btn-dark btn-customm" data-bs-toggle="modal" data-bs-target="#sizeChartModal">Size Chart</button>
+      <button type="button" class="btn btn-link btn-customm" data-bs-toggle="modal" data-bs-target="#sizeChartModal">SIZE CHART</button>
     </div>
   </div>
 
