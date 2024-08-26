@@ -163,6 +163,8 @@
 .modal-dialog{
   top:200px;
 }
+
+
  
   </style>
 </head>
@@ -313,7 +315,80 @@
       <div class="btn btn-outline-dark btn-custom-lg w-100">ADD TO CART</div>
     </div>
   </div>
-</div>v
+</div>
+
+
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    Toggle width collapse
+  </button>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body" style="width: 300px;">
+      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+    </div>
+  </div>
+</div>
+
+
+
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    Toggle width collapse
+  </button>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body" style="width: 300px;">
+      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  // Initialize the carousel
+  var myCarousel = document.querySelector('#demo');
+  var carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 15000, // 3 seconds for demonstration
+    ride: 'carousel'
+  });
+
+  // Function to manually cycle the carousel after a delay
+  function delayedCycle() {
+    setInterval(() => {
+      carousel.next();
+    }, 15000); // 5 seconds delay
+  }
+
+  // Start the delayed cycle
+  delayedCycle();
+</script>
 </html>
