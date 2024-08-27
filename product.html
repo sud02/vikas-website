@@ -114,12 +114,82 @@
 .modal-dialog{
   top:200px;
 }
+
+
+@media (max-width: 767px) {
+  .mobile-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    max-width: 430px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .mobile-slider img {
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/5; /* Maintain 3:4 aspect ratio */
+    object-fit: cover; /* Cover to ensure the image fills the container */
+    border: none;
+    padding-right: 5px; /* Add a bit of padding to the right */
+  }
+
+  .mobile-slider::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+  }
+}
+
+
+
   </style>
 </head>
 <body>
 
 
 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Mobile Slider -->
+<div class="mobile-slider d-md-none" id="mobileSlider">
+  <img src="img1.jpg" alt="Image 1">
+  <img src="img2.jpg" alt="Image 2">
+  <img src="img3.jpg" alt="Image 3">
+  <img src="img4.jpg" alt="Image 4">
+</div>
 
 
 
@@ -130,7 +200,7 @@
 
 
 <!-- Carousel -->
-<div id="demo" class="carousel slide product-carousel" data-bs-ride="carousel">
+<div id="demo" class="carousel slide product-carousel d-none d-md-block" data-bs-ride="carousel">
 
   <!-- Indicators/dots -->
   <div class="carousel-indicators">
@@ -164,6 +234,39 @@
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!--product name and price code-->
     <div class="container">
@@ -250,6 +353,9 @@
     </div>
   </div>
 
+
+
+  </script>
 
 
 </body>
