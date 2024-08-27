@@ -203,14 +203,14 @@ top:200px;
   .mobile-slider {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x none;
+    scroll-snap-type: x mandatory;
     max-width: 430px;
     margin: 0 auto;
     position: relative;
   }
 
   .mobile-slider img {
-    /* scroll-snap-align: start; */
+    scroll-snap-align: start;
     flex: 0 0 auto;
     width: 100%;
     height: auto;
