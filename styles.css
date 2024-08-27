@@ -220,7 +220,29 @@ top:200px;
     margin-right: 12px; /* Add a bit of padding to the right */
   }
 
-  .mobile-slider::-webkit-scrollbar {
-    display: none; /* Hide the scrollbar */
+  .bar-container {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%; /* Width of the entire bar */
+    height: 2px; /* Height of the bar */
+    margin: 0 !important;
+    position: relative;
   }
+  
+  .bar-segment {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    margin: 0 2px; /* Small spacing between segments */
+    background-color: #ddd; /* Inactive color */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .bar-segment.active {
+    background-color: #000; /* Active segment color */
+  }
+  
+  
 }
+
