@@ -36,3 +36,33 @@
 
 
 
+const slider = document.getElementById('mobileSlider');
+const barContainer = document.getElementById('barContainer');
+const images = slider.getElementsByTagName('img');
+const numImages = images.length;
+
+// Create a segment for each image
+for (let i = 0; i < numImages; i++) {
+  const segment = document.createElement('div');
+  segment.classList.add('bar-segment');
+  if (i === 0) segment.classList.add('active'); // Set the first segment as active
+  barContainer.appendChild(segment);
+}
+
+// Function to update the active segment based on scroll position
+function updateActiveSegment() {
+  const scrollLeft = slider.scrollLeft;
+  const imageWidth = slider.clientWidth;
+  const currentIndex = Math.round(scrollLeft / imageWidth);
+
+  const segments = barContainer.getElementsByClassName('bar-segment');
+  for (let i = 0; i < segments.length; i++) {
+    segments[i].classList.remove('active');
+  }
+  segments[currentIndex].classList.add('active');
+}
+
+// Attach the scroll event listener to update the active segment
+slider.addEventListener('scroll', updateActiveSegment);
+
+
